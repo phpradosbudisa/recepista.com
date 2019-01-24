@@ -17,18 +17,18 @@ date_default_timezone_set('Europe/London');
 
 //database credentials
 define('DBHOST', 'localhost');
-define('DBUSER', 'laduthci_laduthci');
-define('DBPASS', 'draganaiogi1A');
-define('DBNAME', 'laduthci_recepista');
+define('DBUSER', 'root');
+define('DBPASS', '');
+define('DBNAME', '_recepista');
 
 //application address
 define('DIR', 'localhost');
-define('SITEEMAIL', 'i-ja-sam@recepista.com');
+define('SITEEMAIL', 'something@someone.com');
 
 
 //Mailchimp config
-define('LIST_ID', '0a716cc34b');
-define('M_API', '579eb5d86f4c5ba6ed02241be00e2a93-us7');
+define('LIST_ID', '');
+define('M_API', '');
 
 try {
 
