@@ -1,0 +1,19 @@
+.bg-white {
+  background-color:rgba(255,255,255,0)!important;
+}
+
+@media (min-width:576px) {
+  .form-inline .form-group {
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex:0 0 auto;
+    flex:0 0 auto;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
+    -ms-flex-align:center;
+    align-items:center;
+    margin-bottom:0;
+    width:100%;
+  }
+}
+

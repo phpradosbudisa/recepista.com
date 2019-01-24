@@ -1,0 +1,137 @@
+a {
+  color:#6d8de1;
+}
+
+#footer a:active, a:hover {
+  color:#fcf8f8;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+a {
+  color:#6d8de1;
+}
+
+#footer a:active, a:hover {
+  color:#fcf8f8;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+#navcol-1 {
+  font-family:'Montserrat Alternates', sans-serif;
+  font-size:13px;
+  text-transform:uppercase;
+}
+
+#navcol-1 {
+  font-family:'Montserrat Alternates', sans-serif;
+  font-size:13px;
+  text-transform:uppercase;
+}
+
+#search_recepies {
+  background:none;
+  color:#fff !important;
+  border-radius:20px;
+  border:2px solid #ffffff;
+  text-align:center;
+}
+
+.detalji_hrana {
+  margin:0 5px;
+}
+
+.divider {
+  margin:15px 0;
+}
+
+#detalji_hrane {
+  margin:15px 0 10px 0;
+  padding:10px 0 10px 0;
+  border-top:2px solid #000;
+}
+
+@media (min-width: 1200px) {
+  #food_container {
+    margin:0 25px;
+  }
+}
+
+#recepti {
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-color:none;
+}
+
+.recept_kontejner {
+  background:#ffffff;
+  color:#000000;
+  border-radius:21px;
+}
+
+.text-center.description {
+  padding:10px;
+}
+
+.show_more_btn {
+  background:none;
+  border:2px solid #e9e9e9;
+  border-radius:28px;
+  margin:14px 0 7px 0;
+}
+
+.recept_kontejner.tekst {
+  padding:5px 0 0 0;
+}
+
+.recept_kontejner img {
+  width:300px;
+  height:225px;
+}
+
+#search_recepies input, select, textarea {
+  color:#fff;
+}
+
+#search_recepies textarea:focus, input:focus {
+  color:#fff;
+}
+
+.recept_kontejner:before {
+}
+
+#head-divider {
+  margin:5em 0;
+}
+
+@media (min-width: 768px) {
+  #home {
+    height:auto;
+  }
+}
+
+#home {
+  min-height:100vh;
+  background-image:url("../../assets/img/hero-bg.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color:#404040;
+}
+
+@media (min-width: 1200px) {
+  .row.projects {
+  }
+}
+
+@media (min-width: 1200px) {
+  #top_container {
+    width:70%;
+  }
+}
+
+.form-inline.d-flex.flex-row.justify-content-center {
+}
+

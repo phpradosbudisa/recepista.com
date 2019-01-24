@@ -1,0 +1,51 @@
+html, body
+{
+	margin:0;
+}
+
+h1
+{
+	font-family: arial, sans-serif;
+	font-size:21px;
+	color:#fff;
+}
+
+.overlay
+{
+	position:absolute;
+	top:100px;
+	left:0;
+	padding:20px 50px 20px 50px;
+	background-color:#000;
+	opacity:0.85;
+	filter:alpha(opacity=85); 
+	z-index:2;
+	max-width: 150px;
+}
+
+.logo-container
+{
+	position: fixed;
+	bottom:25px;
+	left: 0;
+	padding:20px 50px 20px 25px;
+	background-color:#000;
+	opacity:0.85;
+	filter:alpha(opacity=85); 
+	z-index:2;
+	max-width: 150px;
+}
+
+.videoContainer 
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+
+.videoContainer video 
+{
+	min-width: 100%;
+	min-height: 100%;
+}
