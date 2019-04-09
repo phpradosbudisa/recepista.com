@@ -56,7 +56,7 @@ function displayDailyRecipes($limit)
                         <div class="pull-right" href="#"><i class="icon-shopping-cart"></i>
                           <form action="components/detalji_recepta.php" method="get">
                                                     <input type="hidden" name="id"  value="' . $recipe["id"] . '" required>
-                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Priprema"><i class="icon-shopping-cart"></i>
+                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Preperation"><i class="icon-shopping-cart"></i>
                                                     </form>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ function displayDailyRecipes($limit)
                         <span class="rating pull-right">';
 
         switch ($recipe["toughnes"]) {
-            case 'Lagano':
+            case 'easy':
                 echo '<span class="star"></span>';
                 break;
             case 'Normalno':
@@ -122,7 +122,7 @@ function displayRecipes($limit)
   <div class="pull-right" href="#"><i class="icon-shopping-cart"></i>
                           <form action="components/detalji_recepta.php" method="get">
                                                     <input type="hidden" name="id"  value="' . $recipe["id"] . '" required>
-                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Priprema"><i class="icon-shopping-cart"></i>
+                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Preperation"><i class="icon-shopping-cart"></i>
                                                     </form>
                         </div>                    </div>
                     <div class="details">
@@ -130,7 +130,7 @@ function displayRecipes($limit)
                         <span class="rating pull-right">';
 
         switch ($recipe["toughnes"]) {
-            case 'Lagano':
+            case 'easy':
                 echo '<span class="star"></span>';
                 break;
             case 'Normalno':

@@ -75,9 +75,9 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1" style="font-size:13px;">
                 <ul class="nav navbar-nav mx-auto">
-                    <li role="presentation" class="nav-item"><a href="index.php" class="nav-link active">Početna</a></li>
-                    <li role="presentation" class="nav-item"><a href="recepti.php" class="nav-link">Recepti</a></li>
-                    <li role="presentation" class="nav-item"><a href="o-nama.php" class="nav-link">O nama</a></li>
+                    <li role="presentation" class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
+                    <li role="presentation" class="nav-item"><a href="recepti.php" class="nav-link">Recipes</a></li>
+                    <li role="presentation" class="nav-item"><a href="o-nama.php" class="nav-link">About us</a></li>
                 </ul>
                 
                 <ul class="nav navbar-nav">
@@ -131,7 +131,7 @@
   <div class="pull-right" href="#"><i class="icon-shopping-cart"></i>
                           <form action="components/detalji_recepta.php" method="get">
                                                     <input type="hidden" name="id"  value="' . $recipe["id"] . '" required>
-                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Priprema"><i class="icon-shopping-cart"></i>
+                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Preperation"><i class="icon-shopping-cart"></i>
                                                     </form>
                         </div>                    </div>
                     <div class="details">
@@ -139,7 +139,7 @@
                         <span class="rating pull-right">';
                         
                         switch ($recipe["toughnes"]) {
-                            case 'Lagano':
+                            case 'easy':
                                 echo '<span class="star"></span>';
                                 break;
                             case 'Normalno':
@@ -201,7 +201,7 @@
  <div class="pull-right" href="#"><i class="icon-shopping-cart"></i>
                           <form action="components/detalji_recepta.php" method="get">
                                                     <input type="hidden" name="id"  value="' . $recipe["id"] . '" required>
-                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Priprema"><i class="icon-shopping-cart"></i>
+                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Preperation"><i class="icon-shopping-cart"></i>
                                                     </form>
                         </div>                     </div>
                     <div class="details">
@@ -209,7 +209,7 @@
                         <span class="rating pull-right">';
                                 
                                 switch ($recipe["toughnes"]) {
-                                    case 'Lagano':
+                                    case 'easy':
                                         echo '<span class="star"></span>';
                                         break;
                                     case 'Normalno':
@@ -249,8 +249,8 @@
                                     </div>
                                 </div>
                               </div>';
-                            displayDailyRecipes(4, 'Uzina');
-                            displayDailyRecipes(4, 'Dorucak');
+                            displayDailyRecipes(4, 'Brunch');
+                            displayDailyRecipes(4, 'Breakfast');
                         }
                     }  else {
                         echo '<div class="container-fluid">
@@ -261,7 +261,7 @@
                             </div>
                             </div>
                             </div>';
-                        displayDailyRecipes(4, 'Rucak');
+                        displayDailyRecipes(4, 'Lunch');
                         displayDailyRecipes(4, 'Desert');
                     }
                 }

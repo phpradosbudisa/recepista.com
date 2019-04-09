@@ -19,7 +19,7 @@ date_default_timezone_set('Europe/London');
 define('DBHOST', 'localhost');
 define('DBUSER', 'root');
 define('DBPASS', '');
-define('DBNAME', '_recepista');
+define('DBNAME', 'laduthci_recepista');
 
 //application address
 define('DIR', 'localhost');

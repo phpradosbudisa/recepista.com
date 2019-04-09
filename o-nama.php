@@ -36,36 +36,34 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1" style="font-size:13px;">
                 <ul class="nav navbar-nav mx-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Početna</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="recepti.php">Recepti</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="o-nama.php">O nama</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="recepti.php">Recipes</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="o-nama.php">About us</a></li>
                 </ul>
                 <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="dash/">Uloguj se</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="dash/">Log in</a></li>
                 </ul>
         </div>
         </div>
     </nav>
     <section class="d-flex flex-column justify-content-between align-items-center" style="margin-bottom:5em;margin-top:2em;">
-        <h1 class="text-center" style="font-family:'Montserrat Alternates', sans-serif;font-weight:200;margin:2em 0;">Sve o nama Recepistima!</h1>
+        <h1 class="text-center" style="font-family:'Montserrat Alternates', sans-serif;font-weight:200;margin:2em 0;">
+        All about us Recepista's!</h1>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 d-flex flex-row justify-content-center align-items-center align-content-center" style="padding:4em;"><img class="img-fluid" src="assets/img/us.png"></div>
                 <div class="col-12 col-sm-12 col-md-6" style="padding:4em;">
-                    <h1 style="font-family:'Montserrat Alternates', sans-serif;font-weight:100;font-size:30px;">Naša priča, počinje ovako:</h1>
-                    <p style="font-family:'Montserrat Alternates', sans-serif;font-weight:100;">Naša ideja je nastala zapravo tokom jednog kraćeg odmora. Zaboravili smo svoju knjigu s receptima, a mnogo volimo da kuhamo. Te smo morali da tražimo recepte preko interneta i došli do zaključka da naše tijesto i nije ispalo kako treba.<br><br>Zbog
-                        te situacije u kojoj su se i mnogi od vas našli, napravili smo portal Recepista.<br>Želimo da se uključite u našu priču, prema tome gurmani sastojke i sudje u ruke. Slikajte jela i šaljite nam recepte.<br><br>Vaš doprinos:<br>*
-                        Širenje znanja o kuhanju.<br>* Otkrivanje fantastičnih novih recepta.<br>* Kreacija i unapređenje jedne kreativne kulinarske zajednice.<br>* Djeljenje znanja.<br><br>Recepista će uvjek biti besplatan i uvjek ćemo Vama slati nove
-                        recepte.<br>Bićemo Vam veoma zahvalni ukoliko krenute na ovo putovanje s nama.<br><br></p>
+                    <h1 style="font-family:'Montserrat Alternates', sans-serif;font-weight:100;font-size:30px;">Our story begins like this:</h1>
+                    <p style="font-family:'Montserrat Alternates', sans-serif;font-weight:100;">Our idea originated during a short break. We forgot our recipe book, and we like to cook very much. We had to look for recipes over the internet and come to the conclusion that our dough did not turn out well. <br> <br> Becouse of the situation where many of you have found yourselves as did we, we have created a portal for food lovers. We want you to get involved in our story, hence the gourmet ingredients and the dish into your hands. Take a picture of the meals and send us your best recipes. <br> <br> Your contribution: <br> * Spreading knowledge of cooking <br> * Discovering fantastic new recipes <br> * Creation and promotion of a creative culinary community. <br> * Sharing knowledge. <br> <br> The Receptionist will always be free and we will always send you new recipes. <br> We'll be very grateful if you go on this trip with us.<br><br></p>
                     <form class="form-inline d-flex flex-row justify-content-center" method="post">
                         <div class="form-group d-flex" style="width:100%;">  <form class="form-inline d-flex flex-row justify-content-center" method="post"
                       action="components/subscribe.php">
                     <div class="form-group d-flex" style="width:100%;"><input class="form-control" type="email"
                                                                               name="email"
-                                                                              placeholder="Vaša email adresa:"
+                                                                              placeholder="Subscribe here:"
                                                                               autocomplete="off">
                         <button class="btn btn-primary" type="submit" name="submit"
-                                style="background:#17a2b8;border: 1.5px solid #17a2b8">Pridruži se!
+                                style="background:#17a2b8;border: 1.5px solid #17a2b8">Join us!
                         </button>
                     </div>
                 </form></div>

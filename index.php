@@ -65,12 +65,12 @@
         <div
                 class="collapse navbar-collapse" id="navcol-1" style="font-size:13px;">
             <ul class="nav navbar-nav mx-auto">
-                <li role="presentation" class="nav-item"><a href="index.php" class="nav-link active">Početna</a></li>
-                <li role="presentation" class="nav-item"><a href="recepti.php" class="nav-link">Recepti</a></li>
-                <li role="presentation" class="nav-item"><a href="o-nama.php" class="nav-link">O nama</a></li>
+                <li role="presentation" class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
+                <li role="presentation" class="nav-item"><a href="recepti.php" class="nav-link">Recipes</a></li>
+                <li role="presentation" class="nav-item"><a href="o-nama.php" class="nav-link">About us</a></li>
             </ul>
             <ul class="nav navbar-nav">
-                <li role="presentation" class="nav-item"><a href="dash/" class="nav-link active">Uloguj se</a></li>
+                <li role="presentation" class="nav-item"><a href="dash/" class="nav-link active">Log in</a></li>
             </ul>
         </div>
     </div>
@@ -83,14 +83,12 @@
         </div>
         <div class="row">
             <div class="col-xl-6">
-                <h2 class="text-center" style="color:rgb(255,255,255);font-weight:100;font-size:2em;">Brzo vam treba
-                    recept?<br></h2>
+                <h2 class="text-center" style="color:rgb(255,255,255);font-weight:100;font-size:2em;">Do you need a recipe fast?<br></h2>
             </div>
         </div>
         <div class="row">
             <div class="col-xl-6">
-                <h3 class="text-center" style="color:rgb(255,255,255);font-weight:100;font-size:1.4em;">Ne znate šta
-                    danas da spremite? Mi cemo vam predložiti!</h3>
+                <h3 class="text-center" style="color:rgb(255,255,255);font-weight:100;font-size:1.4em;">If you don't know what to prepare today, we can help you!</h3>
             </div>
         </div>
         <div id="head-divider" class="divider"></div>
@@ -104,12 +102,11 @@
                                                                               placeholder="Vaša email adresa:"
                                                                               autocomplete="off">
                         <button class="btn btn-primary" type="submit" name="submit"
-                                style="background:#ffffff00;border: 1.5px solid #a9a9a9">Pretplati me!
+                                style="background:#ffffff00;border: 1.5px solid #a9a9a9">Sign up!
                         </button>
                     </div>
                 </form>
-                <p class="text-truncate text-center" style="color:rgb(255,255,255);font-size:0.9rem;">Pretplatite se na
-                    dnevne sugestije za kuhanje!</p>
+                <p class="text-truncate text-center" style="color:rgb(255,255,255);font-size:0.9rem;">Sign up for weekly recipe suggestions!</p>
             </div>
         </div>
         <div class="row">
@@ -123,13 +120,13 @@
 <!--NAJBOLJI RECEPTI-->
 <div class="caption v-middle text-center">
     <h1 class="cd-headline clip">
-        <span class="blc">Ja sam | </span>
+        <span class="blc">I am | </span>
         <span class="cd-words-wrapper">
-			              <b class="is-visible">Majka.</b>
-			              <b>Otac.</b>
-			              <b>Gurman.</b>
-                          <b>Kuhar.</b>
-                          <b>Recepist-a!</b>
+			              <b class="is-visible">a mother.</b>
+			              <b>a father.</b>
+			              <b>a food lover.</b>
+                          <b>a cook.</b>
+                          <b>a Recepist!</b>
 			            </span>
     </h1>
 </div>
@@ -138,9 +135,8 @@
      style="background-color:#f4f4f4;">
     <div class="intro">
         <h2 class="text-center"
-            style="font-family:'Montserrat Alternates', sans-serif;font-weight:200;margin-bottom:10px;">Najbolji
-            recepti</h2>
-        <p class="text-center" style="margin-bottom:25px;">Dnevna doza recepta za vas dom!</p>
+            style="font-family:'Montserrat Alternates', sans-serif;font-weight:200;margin-bottom:10px;">Best recipes</h2>
+        <p class="text-center" style="margin-bottom:25px;">Daily doses of recipes for your home!</p>
     </div>
     <div class="container-fluid" id="top_container">
         <div class="row projects">
@@ -149,10 +145,8 @@
     </div>
     <div class="intro">
         <h2 class="text-center"
-            style="font-family:'Montserrat Alternates', sans-serif;font-weight:200;margin-bottom:10px;">Niste
-            zadovoljni? Ima toga još!</h2>
-        <p class="text-center" style="margin-bottom:25px;">Pronađite stare ili nove recepte na našoj stranici
-            korištenjem pretraživača!</p>
+            style="font-family:'Montserrat Alternates', sans-serif;font-weight:200;margin-bottom:10px;">Not feed up? There is more!</h2>
+        <p class="text-center" style="margin-bottom:25px;">Find old or new recipes by using our search!</p>
     </div>
 </div>
 
@@ -177,7 +171,7 @@
                 <form class="form-inline d-flex flex-row justify-content-center" method="post">
                     <div class="form-group d-flex flex-row justify-content-center" style="width:100%;">
                         <a class="btn btn-primary" type="link" href="recepti.php"
-                                style="background:#ffffff00;border: 1.5px solid #a9a9a9">Pretraži sve recepte!</a>
+                                style="background:#ffffff00;border: 1.5px solid #a9a9a9">Search all!</a>
                     </div>
                 </form>
             </div>

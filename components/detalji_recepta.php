@@ -26,7 +26,7 @@
                         <div class="pull-right" href="#"><i class="icon-shopping-cart"></i>
                           <form action="detalji_recepta.php" method="get">
                                                     <input type="hidden" name="id"  value="' . $recipe["id"] . '" required>
-                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Priprema"><i class="icon-shopping-cart"></i>
+                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Preperation"><i class="icon-shopping-cart"></i>
                                                     </form>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
     <meta name="keywords" content="Recepista, rECEPISTa, kuhanje, recepti, hrana, kolaci, desert, rucak, pile, ukusno, spremanje, priprema, kulinarstvo, gurman, majka, otac, recepista, obrok, spremanje, kuhanje, pecenje">
     <meta name="description" content="<?= $recipe["short_details"] ?> ">
     <meta property="og:title" content="<?= $recipe["title"] ?>" />
-    <meta property="og:url" content="http://www.recepista.com/components/detalji_recepta.php?id=<?= $recipe["id"] ?>&priprema=Priprema" />
+    <meta property="og:url" content="http://www.recepista.com/components/detalji_recepta.php?id=<?= $recipe["id"] ?>&priprema=Preperation" />
     <meta property="og:type" content="food" />
     <meta property="og:description" content="<?= $recipe["short_details"] ?>" /
     <meta property="og:image" content="<?= $recipe["img_url"] ?>" />
@@ -119,15 +119,23 @@
         }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/a0c234ec7924b4a412284f9a5/3c3cb6c36d45138826aec88a8.js");</script>
 </head>
 
+<style>
+@media (min-width: 992px){
+    #food{
+        height: 95vh
+    }
+}
+</style>
+
 <body>
 <nav class="navbar navbar-light navbar-expand-md">
     <div class="container-fluid"><a class="navbar-brand" href="#" style="background-image:url(&quot;../assets/img/1recepista.png&quot;);"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div
                 class="collapse navbar-collapse" id="navcol-1" style="font-size:13px;">
             <ul class="nav navbar-nav mx-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="../index.php">Početna</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="../recepti.php">Recepti</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="../o-nama.php">O nama</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="../index.php">Home</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="../recepti.php">Recipes</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="../o-nama.php">About us</a></li>
             </ul>
             <ul class="nav navbar-nav">
                 <div>
@@ -135,17 +143,17 @@
                         <div class="form-group d-flex" style="width:100%;"><input class="form-control" type="querry"
                                                                                   style="border-radius: 28px;text-align: center"
                                                                                   name="querry"
-                                                                                  placeholder="Pretrazi recepte:"
+                                                                                  placeholder="Search recipes:"
                                                                                   autocomplete="off">
                         </div>
                     </form>
                 </div>
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="../dash/">Uloguj se</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="../dash/">Log in</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<section class="d-flex justify-content-center align-items-center" style="margin:2em 0;">
+<section id="food" class="d-flex justify-content-center align-items-center" style="margin:2em 0;">
     <div class="container-fluid">
         <div class="row">
 	        <?php
@@ -153,40 +161,42 @@
 		        $img = $recipe['img_url'];
 		        $video = $recipe['video_url'];
 		
-		        if ($recipe['video'] == 'true'){
-			        echo '
-                        <div class="col-sm-12 col-md-12 col-lg-6">
-                        <h3>'. $recipe['title'] .'</h3>
-                        <video controls><source src="'. $recipe['video_url'] .'" type="video/mp4"></source>Your browser does not support HTML5 video.</video>
-                        </div>';
-		        } else{
+		        // if ($recipe['video'] == 'true'){
+			    //     echo '
+                //         <div class="col-sm-12 col-md-12 col-lg-6">
+                //         <h3>'. $recipe['title'] .'</h3>
+                //         <video controls><source src="'. $recipe['video_url'] .'" type="video/mp4"></source>Your browser does not support HTML5 video.</video>
+                //         </div>';
+		        // } else{
 			        echo '<div class="col-sm-12 col-md-12 col-lg-6" style="margin: 0 auto;text-align: center; ">
-                    <img class="img-fluid" style="max-height: 30em" src="'. $recipe['img_url'] .'" alt="' . $recipe["title"] . '">
+                    <img class="img-fluid" style="max-height: 30em;border-radius:28px" src="'. $recipe['img_url'] .'" alt="' . $recipe["title"] . '">
                     </br>
                     </br>
-                    			        <h1>'. $recipe['title'] .'</h1>
+                    <h1  style="font-weight:100;letter-spacing: 7px">'. $recipe['title'] .'</h1>
                     </br>
                     <hr>
                     </br>
-                    <h5>Datum objave:  '. substr($recipe['date_published'], 0, 10) .'</h5>
+                    <h5>  '. substr($recipe['date_published'], 0, 10) .'</h5>
                     </div>';
-                    }
+                    
 	
 	        ?>
             <div class="col-sm-12 col-md-12 col-lg-6">
-                <h3>Priprema:</h3>
-                <p><?php
-		                //List generator
-		                foreach ($data as $recipe) {
-								$list =  $recipe['description'];
-								$list = str_replace(',,','<br>', $list);
-		                        echo $list;
-		                    }
-		                    //List generator end
-		                //List generator end
-	                ?></p>
-                <div>
-                    <h3 class="text-left">Sastojci:</h3>
+            <div>
+                    <div class="d-flex flex-row" style="font-size:18px;">
+                        <div class="d-flex flex-row align-items-center" style="margin:0 3px;"><i class="fa fa-clock-o"></i>
+                            <p style="margin:0;line-height:0px;height:0;padding:0;">&nbsp;<?=$recipe['time']?> mins.</p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin:0 3px;"><i class="fa fa-dashboard"></i>
+                            <p style="margin:0;line-height:0px;height:0;padding:0;">&nbsp;<?=$recipe['toughnes']?></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin:0 3px;"><i class="fa fa-users"></i>
+                            <p style="margin:0;line-height:0px;height:0;padding:0;">  Up to &nbsp;<?=$recipe['f_size']?> persons</p>
+                        </div>
+                    </div>
+
+            <div>
+                    <h4 style="font-weight:100;margin:1.5em 0" class="text-left">Ingredients:</h3>
                     <ul class="list-inline">
 	                    <?php
 		                    //List generator
@@ -199,8 +209,20 @@
 	                    ?>
                     </ul>
                 </div>
+
+                <h4 style="font-weight:100;margin-bottom:1.5em">Preperation:</h3>
+                <p><?php
+		                //List generator
+		                foreach ($data as $recipe) {
+								$list =  $recipe['description'];
+								$list = str_replace(',,','<br>', $list);
+		                        echo $list;
+		                    }
+		                    //List generator end
+		                //List generator end
+	                ?></p>
+              
                 <div>
-                    <h3 class="text-left">Kratki opis:</h3>
                     <ul class="list-inline">
 	                    <?php
 		                    //List generator
@@ -213,18 +235,7 @@
 	                    ?>
                     </ul>
                 </div>
-                <div>
-                    <div class="d-flex flex-row" style="font-size:18px;">
-                        <div class="d-flex flex-row align-items-center" style="margin:0 3px;"><i class="fa fa-clock-o"></i>
-                            <p style="margin:0;line-height:0px;height:0;padding:0;">&nbsp;<?=$recipe['time']?> min.</p>
-                        </div>
-                        <div class="d-flex flex-row align-items-center" style="margin:0 3px;"><i class="fa fa-dashboard"></i>
-                            <p style="margin:0;line-height:0px;height:0;padding:0;">&nbsp;<?=$recipe['toughnes']?></p>
-                        </div>
-                        <div class="d-flex flex-row align-items-center" style="margin:0 3px;"><i class="fa fa-users"></i>
-                            <p style="margin:0;line-height:0px;height:0;padding:0;">&nbsp;<?=$recipe['f_size']?> osobe</p>
-                        </div>
-                    </div>
+               
                 </div>
             </div>
         </div>
@@ -232,7 +243,7 @@
 </section>
 <section class="d-flex flex-row justify-content-center align-items-center" style="background-color:#000000;height:10em;color:rgb(255,255,255);">
     <div class="container" style="margin:0;">
-        <h1 class="text-center">Mjesto za Vašu reklamu!</h1>
+        <h1 class="text-center">Place for your advertisement!</h1>
     </div>
 </section>
 <section class="d-flex flex-row justify-content-center align-items-center align-content-center" id="recepti">
@@ -255,7 +266,7 @@
                         <button class="btn btn-primary" type="submit"
                                 style="background:#ffffff00;border: 1.5px solid #a9a9a9"><a
                                     style="background:#ffffff00!important;color: white;text-decoration: none"
-                                    href="recepti.php">Pretraži sve recepte!</a>
+                                    href="recepti.php">Search all recipes!</a>
                         </button>
                     </div>
                 </form>

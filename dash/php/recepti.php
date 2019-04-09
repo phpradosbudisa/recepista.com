@@ -133,8 +133,8 @@
                         <div style="margin-bottom: 1em"><h1>Dodaj novi recept!</h1></div>
                         <div class="form-group "><label style="font-weight:500;">Naziv:</label><input class="form-control" type="text" name="title" placeholder="Omlet sa šunkom.."></div>
                         <div class="form-group"><label style="font-weight:500;">Kratki opis:</label><input class="form-control" type="text" name="short_description" placeholder="Ukusno, brzo i jednostavno..."></div>
-                        <div class="form-group"><label style="font-weight:500;">Sastojci:</label><textarea class="form-control" name="ingredients">*Mlijeko *Brašno</textarea></div>
-                        <div class="form-group"><label style="font-weight:500;">Priprema:</label><textarea class="form-control" name="description" placeholder="Potrebno nam je..."></textarea></div>
+                        <div class="form-group"><label style="font-weight:500;">ingredients:</label><textarea class="form-control" name="ingredients">*Mlijeko *Brašno</textarea></div>
+                        <div class="form-group"><label style="font-weight:500;">Preperation:</label><textarea class="form-control" name="description" placeholder="Potrebno nam je..."></textarea></div>
                         <div class="d-flex">
                             <div class="form-group" style="width: 30%;padding: 0 4px"><label style="font-weight:500;">Vrijeme pripreme:</label>
                                 <input class="form-control input-default" list="time"
@@ -154,7 +154,7 @@
                                        name="toughnes" placeholder="Odaberite">
                                 <br>
                                 <datalist id="toughnes" style="color: #fff">
-                                    <option value="Lagano"></option>
+                                    <option value="easy"></option>
                                     <option value="Normalno"></option>
                                     <option value="Komplikovano"></option>
                                     <option value="Veoma zahtjevno"></option>
@@ -179,11 +179,11 @@
                                 <input class="form-control input-default" list="category"
                                        name="category" placeholder="Odaberite">
                                 <datalist id="category" style="color: #fff">
-                                    <option value="Dorucak"></option>
-                                    <option value="Rucak"></option>
-                                    <option value="Vecera"></option>
+                                    <option value="Breakfast"></option>
+                                    <option value="Lunch"></option>
+                                    <option value="Dinner"></option>
                                     <option value="Desert"></option>
-                                    <option value="Uzina"></option>
+                                    <option value="Brunch"></option>
                                 </datalist></div>
                             <div class="form-group"><label style="font-weight:500;">Top:</label>
                                 <input class="form-control input-default"  list="top"

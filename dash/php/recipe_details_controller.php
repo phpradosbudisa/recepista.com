@@ -129,8 +129,8 @@
                         <input type="hidden" name="id" value="'. $recipe_id .'">
                         <div class="form-group "><label style="font-weight:500;">Naziv:</label><input class="form-control" type="text" value="'.$detail['title'].'" name="title" placeholder="Omlet sa šunkom.."></div>
                         <div class="form-group"><label style="font-weight:500;">Kratki opis:</label><input class="form-control" type="text" value="'.$detail['short_details'].'" name="short_description" placeholder="Ukusno, brzo i jednostavno..."></div>
-                        <div class="form-group"><label style="font-weight:500;">Sastojci:</label><textarea class="form-control"  name="ingredients">'.$detail['ingredients'].'</textarea></div>
-                        <div class="form-group"><label style="font-weight:500;">Priprema:</label><textarea class="form-control"  name="description" placeholder="Potrebno nam je...">'.$detail['description'].'</textarea></div>
+                        <div class="form-group"><label style="font-weight:500;">ingredients:</label><textarea class="form-control"  name="ingredients">'.$detail['ingredients'].'</textarea></div>
+                        <div class="form-group"><label style="font-weight:500;">Preperation:</label><textarea class="form-control"  name="description" placeholder="Potrebno nam je...">'.$detail['description'].'</textarea></div>
                         <div class="d-flex">
                             <div class="form-group" style="width: 30%;padding: 0 4px"><label style="font-weight:500;">Vrijeme pripreme:</label>
                                 <input class="form-control input-default" list="time"
@@ -150,7 +150,7 @@
                                        name="toughnes" placeholder="Odaberite" value="'.$detail['toughnes'].'">
                                 <br>
                                 <datalist id="toughnes" style="color: #fff">
-                                    <option value="Lagano"></option>
+                                    <option value="easy"></option>
                                     <option value="Normalno"></option>
                                     <option value="Komplikovano"></option>
                                     <option value="Veoma zahtjevno"></option>
@@ -175,11 +175,11 @@
                                 <input class="form-control input-default" list="category"
                                        name="category" placeholder="Odaberite" value="'.$detail['category'].'">
                                 <datalist id="category" style="color: #fff">
-                                    <option value="Dorucak"></option>
-                                    <option value="Rucak"></option>
-                                    <option value="Vecera"></option>
+                                    <option value="Breakfast"></option>
+                                    <option value="Lunch"></option>
+                                    <option value="Dinner"></option>
                                     <option value="Desert"></option>
-                                    <option value="Uzina"></option>
+                                    <option value="Brunch"></option>
                                 </datalist></div>
                             <div class="form-group"><label style="font-weight:500;">Top:</label>
                                 <input class="form-control input-default"  list="top"

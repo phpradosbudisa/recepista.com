@@ -75,9 +75,9 @@
             <div
                     class="collapse navbar-collapse" id="navcol-1" style="font-size:13px;">
                 <ul class="nav navbar-nav mx-auto">
-                    <li role="presentation" class="nav-item"><a href="index.php" class="nav-link active">Početna</a></li>
-                    <li role="presentation" class="nav-item"><a href="recepti.php" class="nav-link">Recepti</a></li>
-                    <li role="presentation" class="nav-item"><a href="o-nama.php" class="nav-link">O nama</a></li>
+                    <li role="presentation" class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
+                    <li role="presentation" class="nav-item"><a href="recepti.php" class="nav-link">Recipes</a></li>
+                    <li role="presentation" class="nav-item"><a href="o-nama.php" class="nav-link">About us</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav">
@@ -86,12 +86,12 @@
                             <div class="form-group d-flex" style="width:100%;"><input class="form-control" type="querry"
                                                                                       style="border-radius: 28px;text-align: center"
                                                                                       name="querry"
-                                                                                      placeholder="Pretrazi recepte:"
+                                                                                      placeholder="Search recipes:"
                                                                                       autocomplete="off">
                             </div>
                         </form>
                     </div>
-                    <li role="presentation" class="nav-item"><a href="#" class="nav-link active">Uloguj se</a></li>
+                    <li role="presentation" class="nav-item"><a href="#" class="nav-link active">Log in</a></li>
                 </ul>
             </div>
         </div>
@@ -130,7 +130,7 @@
   <div class="pull-right" href="#"><i class="icon-shopping-cart"></i>
                           <form action="components/detalji_recepta.php" method="get">
                                                     <input type="hidden" name="id"  value="' . $recipe["id"] . '" required>
-                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Priprema"><i class="icon-shopping-cart"></i>
+                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Preperation"><i class="icon-shopping-cart"></i>
                                                     </form>
                         </div>                    </div>
                     <div class="details">
@@ -138,19 +138,19 @@
                         <span class="rating pull-right">';
                         
                         switch ($recipe["toughnes"]) {
-                            case 'Lagano':
+                            case 'Easy':
                                 echo '<span class="star"></span>';
                                 break;
-                            case 'Normalno':
+                            case 'Normal':
                                 echo '<span class="star"></span>
                                           <span class="star"></span>';
                                 break;
-                            case 'Komplikovano':
+                            case 'Complicated':
                                 echo '<span class="star"></span>
                                           <span class="star"></span>
                                           <span class="star"></span>';
                                 break;
-                            case 'Veoma zahtjevno':
+                            case 'Very hard':
                                 echo '<span class="star"></span>
                                           <span class="star"></span>
                                           <span class="star"></span>
@@ -215,39 +215,39 @@
  <div class="pull-right" href="#"><i class="icon-shopping-cart"></i>
                           <form action="components/detalji_recepta.php" method="get">
                                                     <input type="hidden" name="id"  value="' . $recipe["id"] . '" required>
-                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Priprema"><i class="icon-shopping-cart"></i>
+                                                    <input type="submit" name="priprema" class="btn btn-info pull-right" value="Preperation"><i class="icon-shopping-cart"></i>
                                                     </form>
                         </div>                     </div>
                     <div class="details">
                         <span class="time"><i class="icon-time"></i>' . $recipe["toughnes"] . '</span>
                         <span class="rating pull-right">';
                                 
-                                switch ($recipe["toughnes"]) {
-                                    case 'Lagano':
-                                        echo '<span class="star"></span>';
-                                        break;
-                                    case 'Normalno':
-                                        echo '<span class="star"></span>
+                        switch ($recipe["toughnes"]) {
+                            case 'Easy':
+                                echo '<span class="star"></span>';
+                                break;
+                            case 'Normal':
+                                echo '<span class="star"></span>
                                           <span class="star"></span>';
-                                        break;
-                                    case 'Komplikovano':
-                                        echo '<span class="star"></span>
-                                          <span class="star"></span>
-                                          <span class="star"></span>';
-                                        break;
-                                    case 'Veoma zahtjevno':
-                                        echo '<span class="star"></span>
-                                          <span class="star"></span>
+                                break;
+                            case 'Complicated':
+                                echo '<span class="star"></span>
                                           <span class="star"></span>
                                           <span class="star"></span>';
-                                        break;
-                                    default:
-                                        echo '<span class="star"></span>
-                                          <span class="star"></span>
+                                break;
+                            case 'Very hard':
+                                echo '<span class="star"></span>
                                           <span class="star"></span>
                                           <span class="star"></span>
                                           <span class="star"></span>';
-                                }
+                                break;
+                            default:
+                                echo '<span class="star"></span>
+                                          <span class="star"></span>
+                                          <span class="star"></span>
+                                          <span class="star"></span>
+                                          <span class="star"></span>';
+                        }
                                 echo '
                          </span>
                     </div>
@@ -258,8 +258,8 @@
                             echo '<div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12" style="text-align: center">
-                                        <h4>Vaša pretraga je prazna ili nemamo takav recept.</h4>
-                                        <h6>Mi predlažemo sledeće recepte, pogledajte ih. <br> Ponovite pretragu.</h6>
+                                        <h4>Your search is either empty or we do not have that result.</h4>
+                                        <h6>We suggeste the following recipes or you can <br> repeat your search.</h6>
                                     </div>
                                 </div>
                               </div>';
@@ -270,8 +270,8 @@
                         echo '<div class="container-fluid">
                                 <div class="row">
                                 <div class="col-12" style="text-align: center">
-                                <h3>Nismo pronašli rezultate Vaše pretrage.</h3>
-                                Minimalna dužina riječi mora biti ' . $min_lenght . ' karaktera.
+                                <h3>We did not find any results.</h3>
+                                Minimal characters to search must be ' . $min_lenght . ' .
                             </div>
                             </div>
                             </div>';
